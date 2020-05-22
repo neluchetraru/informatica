@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href='./assets/icons/logo.png' type='image/x-icon'/ >
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;800&display=swap" rel="stylesheet"> 
+   
+    <title>Pepeni - baștina mea.</title>
+</head>
+
+<!-- Buna ziua :). Din temele studiate am folosit in acest site listele, referinte, imagini, tabele si diferite formatari ale textului.
+Am folosit css pentru stilizarea site-ului si JavaScript pentru obtinerea temperaturii actuale prin API si a datei si orei actuale. Nu este mobile-friendly.-->
+
+<body>
+    <section id="home" class="home">
+    <div class="header">
+        <div class="logo">
+            <img src="./assets/icons/logo.png" alt="Logo-ul site-ului">
+            <h1 class="logo__text">Pepeni</h1>
+        </div>
+        <nav class="nav">
+            <ul class="nav__items">
+                <li class="nav__item"><a href="#home" class="nav__link">Acasă</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Despre</a></li>
+                <li class="nav__item"><a href="#news" class="nav__link">Noutăți</a></li>
+
+            </ul>
+        
+        </nav>
+    </div>
+        <video autoplay loop muted>
+            <source src="assets/video/background.mp4" type="video/mp4">
+        </video>
+        <div class="discover">
+            <div class="discover--wrapper">
+                <h1 class="discover__title">Satul Pepeni este un sat miraculos...</h1>
+                <a class="discover__btn" href="#about">
+                    <i class="fas fa-arrow-up"></i> <span>Citește mai mult...</span> 
+                </a>
+            </div>
+            <img class="discover__photo" src="./assets/images/home-img.jpg" alt="Imagine cu satul Pepeni"></img>
+        </div>
+        
+    </section>
+    <section class="about" id="about">
+        <div class="about__description">
+            <h1 class="about__description--title">Despre Pepeni</h1>
+            <p class="about__description--text">Satul Pepeni este o localitate in Raionul Sîngerei situata la latitudinea 47.6386 longitudinea 28.3405 si altitudinea de 146 metri fata de nivelul marii. Aceasta localitate este in administrarea or. Sîngerei. Conform recensamintului din anul 2004 populatia este de 4 415 locuitori. Distanța directă pîna în or. Sîngerei este de 22 km. Distanța directă pîna în or. Chişinău este de 84 km.</p>
+            <table>
+                <caption>Componența pe naționalități:</caption>
+                <tr>
+                    <th>Nr. ord.</th>
+                    <th>Naționalitate</th>
+                    <th>Nr. locuitori</th>
+                    <th>% locuitori</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Moldoveni / Români</td>
+                    <td>4 389</td>
+                    <td>99.41</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ucraineni</td>
+                    <td>17</td>
+                    <td>0.39</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ruși</td>
+                    <td>4</td>
+                    <td>0.09</td>
+                </tr>
+            </table>
+        </div>
+        <div class="about__weather">
+            <h3 class="about__weather--date"></h3>
+            <h2 class="about__weather--temp"></h2>
+            <h4 class="about__weather--time"></h4>
+        </div>
+    </section>
+
+    <section class="news" id="news">
+        <div class="news__subscribe">
+            <h1 class="news__subscribe--info">Apăsați pe butonul de mai jos pentru a primi noutăți zilnic pe e-mailul indicat.</h1>
+            <input type="email" class="news__subscribe--input" placeholder="Emailul dvs.">
+            <a href="#" class="news__subscribe--btn" >Înregistrare</a>
+            
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/fe221256f4.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

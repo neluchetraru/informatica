@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2rem 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 35px;
+  margin-right: 2rem;
+}
+
+.logo__text {
+  font-family: "Chelsea Market", sans-serif;
+  font-size: 4.5rem;
+  color: #dad6d6;
+}
+
+.nav {
+  width: 40%;
+}
+
+.nav__items {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.nav__link:hover {
+  transition: all .3s ease-in-out;
+  color: #a5df31;
+  border-bottom: 2px solid white;
+  padding-bottom: .5rem;
+}
+
+.home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  width: 100%;
+}
+
+.discover {
+  padding: 45vh 6% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.discover--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discover__title {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  letter-spacing: 2.3px;
+  text-align: center;
+}
+
+.discover__btn {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.3rem 2rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+.discover__btn i {
+  margin-right: 1.4rem;
+  transform: rotate(180deg);
+}
+
+.discover__btn:hover {
+  transition: .3s all ease-in-out;
+  border: 2px solid black;
+  color: black;
+  background: white;
+  transform: skewX(-6deg);
+}
+
+.discover__photo {
+  transform: rotate(3deg) translateX(-5rem);
+  height: 30rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: .3s all ease-in-out;
+}
+
+.discover__photo:hover {
+  transform: rotate(0deg) translateX(-2rem);
+}
+
+.about {
+  padding: 10rem 6% 0;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/bg-about.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+
+
+
+}
+
+.about__description {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__description--title {
+  font-family: 'Chelsea Market', sans-serif;
+  font-size: 4.5rem;
+  margin: 2rem 0;
+  color: white;
+}
+
+.about__description--text {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 300;
+  line-height: 2.8rem;
+  letter-spacing: 1.4px;
+}
+
+.about table {
+  margin-top: 3rem;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+.about table caption {
+  font-size: 2.4rem;
+}
+
+.about table td,
+.about table th {
+  font-size: 1.4rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  outline: 0;
+  border: 1px solid #a09999;
+}
+
+.about table td:hover,
+.about table th:hover {
+  transition: all .3s ease-in-out;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
+.about table th {
+  color: #5d5de6;
+  font-weight: 300;
+}
+
+.about__weather {
+  width: 30rem;
+  height: 35rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: .7rem;
+}
+
+.about__weather--date {
+  font-family: "Montserrat", sans-serif;
+  color: #b6b6b6;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.about__weather--temp {
+  font-family: 'Chelsea Market', sans-serif;
+  font-size: 6rem;
+  color: white;
+}
+
+.about__weather--time {
+  font-family: "Montserrat", sans-serif;
+  color: #b6b6b6;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.news {
+  background-color: #252a34;
+  color: white;
+  width: 100%;
+  padding: 10rem 0;
+}
+
+.news__subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.news__subscribe--info {
+  width: 60%;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 300;
+}
+
+.news__subscribe--input {
+  width: 45%;
+  margin: 2rem auto;
+  font-size: 2rem;
+  padding: .3rem 1rem;
+  font-weight: 200;
+  text-align: center;
+  border-radius: .6rem;
+  outline: none;
+  border: 1px solid #08d9d6;
+}
+
+.news__subscribe--btn {
+  margin: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: white;
+  background: #ff2e63;
+  padding: 1rem 2rem;
+  border-radius: .7rem;
+}
