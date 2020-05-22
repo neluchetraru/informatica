@@ -75,4 +75,7 @@ async function init(){
     UIController();
 }
 
-init();
+
+$( document ).ready(function() {
+    init();
+});
