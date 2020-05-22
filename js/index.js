@@ -14,7 +14,7 @@ const DOM = {
 async function getTemp()  {
     const API_KEY = 'b9e5590c438471dd41452cb1459950c1';
     const location = 'Pepeni';
-    const link = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
+    const link = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
 
     const promise = await $.ajax({
         url: link,
