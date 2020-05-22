@@ -16,9 +16,19 @@ async function getTemp()  {
     const location = 'Pepeni';
     const link = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
 
-    const promise = await fetch(link).then(res=>{
-        return res.json();
+    const promise = await $.ajax({
+        url: link,
+        type: "get",
+        succes: function(response){
+            return response.json();
+        }
     });
+
+
+
+    // const promise = await fetch(link).then(res=>{
+    //     return res.json();
+    // });
 
     let temp = promise.main.temp;
     temp -=273.15;
