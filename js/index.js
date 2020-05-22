@@ -39,7 +39,8 @@ async function getTemp()  {
 const getTime = () => {
     let date = new Date();
     let hour = date.getHours();
-    let minutes = date.getMinutes();
+    let minutes = (date.getMinutes()<10?'0':'' )+ date.getMinutes();
+    console.log(minutes);
     const fullTime = `${hour}:${minutes}`;
     data.time = fullTime;
     
